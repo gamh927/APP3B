@@ -11,25 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.APP3B">
-
-        <!-- SplashscreenActivity configurada como la primera pantalla (LAUNCHER) -->
+        <activity
+            android:name=".ui.theme.activities.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.theme.activities.LoginActivity"
+            android:exported="false" /> <!-- SplashscreenActivity configurada como la primera pantalla (LAUNCHER) -->
         <activity
             android:name=".ui.theme.activities.SplashscreenActivity"
             android:exported="true"
             android:theme="@style/Theme.APP3B">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- MainActivity se abre después de SplashscreenActivity -->
+        </activity> <!-- MainActivity se abre después de SplashscreenActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="false"
             android:label="@string/app_name"
             android:theme="@style/Theme.APP3B" />
-
     </application>
 
 </manifest>

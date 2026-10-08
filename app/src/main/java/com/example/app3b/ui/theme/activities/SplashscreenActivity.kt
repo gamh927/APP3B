@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.app3b.MainActivity
+import com.example.app3b.ui.theme.activities.LoginActivity
 import com.example.app3b.R
 
 class SplashscreenActivity : AppCompatActivity() {
@@ -25,7 +26,7 @@ class SplashscreenActivity : AppCompatActivity() {
 
         // Temporizador de 5 segundos (5000 ms) antes de redirigir a MainActivity
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish() // Destruye SplashscreenActivity para impedir volver con el botón atrás
         }, 5000)

@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -49,7 +50,13 @@ android {
 }
 
 dependencies {
-    // Existing base dependencies
+    // --- FIREBASE DEPENDENCIES (Manejadas por BoM) ---
+    implementation(platform("com.google.firebase:firebase-bom:33.10.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth") // <--- Agregada para Login
+    implementation("com.google.firebase:firebase-firestore") // <--- Sin versión explícita
+
+    // Base AndroidX & Material
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -57,7 +64,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.lifecycle.runtime.ktx)
 
-    // View Navigation (keep if using Fragments alongside Compose)
+    // Navigation Components (Fragments XML)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
 

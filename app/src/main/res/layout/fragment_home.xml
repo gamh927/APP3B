@@ -23,7 +23,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="785dp"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
@@ -35,8 +35,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/homewall"
-                            android:scaleType="centerCrop"/>
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/homewall" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -71,6 +71,18 @@
                         android:text="@string/inicio_App"
                         android:textColor="@color/primary"
                         android:textSize="@dimen/tamanioSubtitulo" />
+
+                    <ImageView
+                        android:layout_width="237dp"
+                        android:layout_height="209dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/qrcode_i_pinimg_com"></ImageView>
+
+                    <ImageView
+                        android:layout_width="356dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/whatsapp_image_2026_09_23_at_6_06_20_pm"></ImageView>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>

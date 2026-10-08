@@ -10,4 +10,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gold">#FFD700</color>
+    <color name="trifacia">#9C4AE4</color>
+    <color name="manguitorotador">#E0105D</color>
+    <color name="flexortendonligaventoso">#0A3FBC</color>
 </resources>
